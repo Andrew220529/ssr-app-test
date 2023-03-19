@@ -11,7 +11,7 @@ export default function Index({ data }) {
 
 export async function getServerSideProps() {
   try {
-    const response = await axios.get("/api/test");
+    const response = await axios.get("https://ssr-app-test-dhl5.vercel.app/api/test");
     const data = response.data;
 
     return {
